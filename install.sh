@@ -2,8 +2,8 @@
 
 # Set variables
 # -----------------------------------
-GUNBOT_GITHUB_FOLDER_NAME="Gunbot3.3.2"
-GUNBOT_GITHUB_FILE_NAME="GUNBOT_v3.3.2_Poloniex_Bittrex_Patch"
+GUNBOT_GITHUB_FOLDER_NAME="v3.2GUI"
+GUNBOT_GITHUB_FILE_NAME="GUNBOT_v3.2_GUI_edition_all_CPU.zip"
 
 
 # Set functions
@@ -30,7 +30,7 @@ apt-get -qq update > /dev/null 2>&1
 
 logMessage "(2/6) Install nodejs 6.x"
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-curl -qsL https://deb.nodesource.com/setup_6.x | bash - > /dev/null 2>&1
+curl -qsL https://deb.nodesource.com/setup_7.x | bash - > /dev/null 2>&1
 apt-get -y -qq install nodejs > /dev/null 2>&1
 
 

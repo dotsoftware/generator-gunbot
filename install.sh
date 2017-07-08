@@ -42,21 +42,22 @@ npm install -g pm2 yo@1.8.5 generator-gunbot gunbot-monitor > /dev/null 2>&1
 
 logMessage "(4/6) Install GUNBOT"
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-wget -q https://github.com/GuntharDeNiro/BTCT/releases/download/${GUNBOT_GITHUB_FOLDER_NAME}/${GUNBOT_GITHUB_FILE_NAME}.zip -P /opt/
-unzip -o -qq /opt/${GUNBOT_GITHUB_FILE_NAME}.zip -d /opt/unzip-tmp
+#wget -q https://github.com/GuntharDeNiro/BTCT/releases/download/${GUNBOT_GITHUB_FOLDER_NAME}/${GUNBOT_GITHUB_FILE_NAME}.zip -P /opt/
+wget -q https://github.com/GuntharDeNiro/BTCT/releases/download/v3.2GUI/GUNBOT_v3.2_GUI_edition_all_CPU.zip -P /opt
+unzip -o -qq /opt/GUNBOT_v3.2_GUI_edition_all_CPU.zip -d /opt/unzip-tmp
 
 # create folder for the current version.
-mkdir /opt/${GUNBOT_GITHUB_FILE_NAME} -p
+mkdir /opt/GUNBOT_v3.2_GUI_edition_all_CPU -p
 
 # Copy only the executables.
-cp /opt/unzip-tmp/gunthy-* /opt/${GUNBOT_GITHUB_FILE_NAME}
+cp /opt/unzip-tmp/gunthy-* /opt/GUNBOT_v3.2_GUI_edition_all_CPU.zip
 
 # creates a symbolic link to the gunbot folder.
 rm /opt/gunbot > /dev/null 2>&1
-ln -s /opt/${GUNBOT_GITHUB_FILE_NAME} /opt/gunbot
+ln -s /opt/GUNBOT_v3.2_GUI_edition_all_CPU /opt/gunbot
 
 # Cleanup
-rm /opt/${GUNBOT_GITHUB_FILE_NAME}.zip
+rm /opt/GUNBOT_v3.2_GUI_edition_all_CPU.zip
 rm -R /opt/unzip-tmp
 
 # Set rights

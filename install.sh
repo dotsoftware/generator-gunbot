@@ -50,7 +50,7 @@ unzip -o -qq /opt/GUNBOT_v3.2_GUI_edition_all_CPU.zip -d /opt/unzip-tmp
 mkdir /opt/GUNBOT_v3.2_GUI_edition_all_CPU -p
 
 # Copy only the executables.
-cp /opt/unzip-tmp/gunthy-* /opt/GUNBOT_v3.2_GUI_edition_all_CPU.zip
+cp /opt/unzip-tmp/gunthy-* /opt/GUNBOT_v3.2_GUI_edition_all_CPU
 
 # creates a symbolic link to the gunbot folder.
 rm /opt/gunbot > /dev/null 2>&1
